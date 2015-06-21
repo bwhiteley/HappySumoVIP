@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		715F0D161B364C3E00793278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F0D151B364C3E00793278 /* AppDelegate.swift */; };
+		715F0D181B364C3E00793278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F0D171B364C3E00793278 /* ViewController.swift */; };
+		715F0D1B1B364C3E00793278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715F0D191B364C3E00793278 /* Main.storyboard */; };
+		715F0D1D1B364C3E00793278 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715F0D1C1B364C3E00793278 /* Images.xcassets */; };
+		715F0D201B364C3E00793278 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 715F0D1E1B364C3E00793278 /* LaunchScreen.xib */; };
+		715F0D2C1B364C3E00793278 /* HappySumoVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F0D2B1B364C3E00793278 /* HappySumoVIPTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		715F0D261B364C3E00793278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715F0D081B364C3E00793278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 715F0D0F1B364C3E00793278;
+			remoteInfo = HappySumoVIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		715F0D101B364C3E00793278 /* HappySumoVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappySumoVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F0D141B364C3E00793278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715F0D151B364C3E00793278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		715F0D171B364C3E00793278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		715F0D1A1B364C3E00793278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		715F0D1C1B364C3E00793278 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		715F0D1F1B364C3E00793278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		715F0D251B364C3E00793278 /* HappySumoVIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappySumoVIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		715F0D2A1B364C3E00793278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715F0D2B1B364C3E00793278 /* HappySumoVIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappySumoVIPTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		715F0D0D1B364C3E00793278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F0D221B364C3E00793278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		715F0D071B364C3E00793278 = {
+			isa = PBXGroup;
+			children = (
+				715F0D121B364C3E00793278 /* HappySumoVIP */,
+				715F0D281B364C3E00793278 /* HappySumoVIPTests */,
+				715F0D111B364C3E00793278 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		715F0D111B364C3E00793278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				715F0D101B364C3E00793278 /* HappySumoVIP.app */,
+				715F0D251B364C3E00793278 /* HappySumoVIPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		715F0D121B364C3E00793278 /* HappySumoVIP */ = {
+			isa = PBXGroup;
+			children = (
+				715F0D151B364C3E00793278 /* AppDelegate.swift */,
+				715F0D171B364C3E00793278 /* ViewController.swift */,
+				715F0D191B364C3E00793278 /* Main.storyboard */,
+				715F0D1C1B364C3E00793278 /* Images.xcassets */,
+				715F0D1E1B364C3E00793278 /* LaunchScreen.xib */,
+				715F0D131B364C3E00793278 /* Supporting Files */,
+			);
+			path = HappySumoVIP;
+			sourceTree = "<group>";
+		};
+		715F0D131B364C3E00793278 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				715F0D141B364C3E00793278 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		715F0D281B364C3E00793278 /* HappySumoVIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				715F0D2B1B364C3E00793278 /* HappySumoVIPTests.swift */,
+				715F0D291B364C3E00793278 /* Supporting Files */,
+			);
+			path = HappySumoVIPTests;
+			sourceTree = "<group>";
+		};
+		715F0D291B364C3E00793278 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				715F0D2A1B364C3E00793278 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		715F0D0F1B364C3E00793278 /* HappySumoVIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715F0D2F1B364C3E00793278 /* Build configuration list for PBXNativeTarget "HappySumoVIP" */;
+			buildPhases = (
+				715F0D0C1B364C3E00793278 /* Sources */,
+				715F0D0D1B364C3E00793278 /* Frameworks */,
+				715F0D0E1B364C3E00793278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappySumoVIP;
+			productName = HappySumoVIP;
+			productReference = 715F0D101B364C3E00793278 /* HappySumoVIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		715F0D241B364C3E00793278 /* HappySumoVIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 715F0D321B364C3E00793278 /* Build configuration list for PBXNativeTarget "HappySumoVIPTests" */;
+			buildPhases = (
+				715F0D211B364C3E00793278 /* Sources */,
+				715F0D221B364C3E00793278 /* Frameworks */,
+				715F0D231B364C3E00793278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				715F0D271B364C3E00793278 /* PBXTargetDependency */,
+			);
+			name = HappySumoVIPTests;
+			productName = HappySumoVIPTests;
+			productReference = 715F0D251B364C3E00793278 /* HappySumoVIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		715F0D081B364C3E00793278 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Whiteley;
+				TargetAttributes = {
+					715F0D0F1B364C3E00793278 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					715F0D241B364C3E00793278 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 715F0D0F1B364C3E00793278;
+					};
+				};
+			};
+			buildConfigurationList = 715F0D0B1B364C3E00793278 /* Build configuration list for PBXProject "HappySumoVIP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 715F0D071B364C3E00793278;
+			productRefGroup = 715F0D111B364C3E00793278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				715F0D0F1B364C3E00793278 /* HappySumoVIP */,
+				715F0D241B364C3E00793278 /* HappySumoVIPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		715F0D0E1B364C3E00793278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F0D1B1B364C3E00793278 /* Main.storyboard in Resources */,
+				715F0D201B364C3E00793278 /* LaunchScreen.xib in Resources */,
+				715F0D1D1B364C3E00793278 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F0D231B364C3E00793278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		715F0D0C1B364C3E00793278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F0D181B364C3E00793278 /* ViewController.swift in Sources */,
+				715F0D161B364C3E00793278 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		715F0D211B364C3E00793278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				715F0D2C1B364C3E00793278 /* HappySumoVIPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		715F0D271B364C3E00793278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 715F0D0F1B364C3E00793278 /* HappySumoVIP */;
+			targetProxy = 715F0D261B364C3E00793278 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		715F0D191B364C3E00793278 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				715F0D1A1B364C3E00793278 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		715F0D1E1B364C3E00793278 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				715F0D1F1B364C3E00793278 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		715F0D2D1B364C3E00793278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		715F0D2E1B364C3E00793278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		715F0D301B364C3E00793278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HappySumoVIP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		715F0D311B364C3E00793278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HappySumoVIP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		715F0D331B364C3E00793278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HappySumoVIPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappySumoVIP.app/HappySumoVIP";
+			};
+			name = Debug;
+		};
+		715F0D341B364C3E00793278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HappySumoVIPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappySumoVIP.app/HappySumoVIP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		715F0D0B1B364C3E00793278 /* Build configuration list for PBXProject "HappySumoVIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F0D2D1B364C3E00793278 /* Debug */,
+				715F0D2E1B364C3E00793278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		715F0D2F1B364C3E00793278 /* Build configuration list for PBXNativeTarget "HappySumoVIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F0D301B364C3E00793278 /* Debug */,
+				715F0D311B364C3E00793278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		715F0D321B364C3E00793278 /* Build configuration list for PBXNativeTarget "HappySumoVIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				715F0D331B364C3E00793278 /* Debug */,
+				715F0D341B364C3E00793278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 715F0D081B364C3E00793278 /* Project object */;
+}
