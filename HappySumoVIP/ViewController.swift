@@ -8,18 +8,17 @@
 
 import UIKit
 import WebKit
+import SafariServices
 
 class ViewController: UIViewController {
     
-    var webView:WKWebView!
+    var loaded:Bool = false
     
-    @IBOutlet weak var backButton: UIButton!
     var url:NSURL {
         let date = NSDate()
         let cal = NSCalendar.currentCalendar()
-        var comps:NSURLComponents
-        let month:Int = cal.component(NSCalendarUnit.CalendarUnitMonth, fromDate: date)
-        let year:Int = cal.component(.CalendarUnitYear, fromDate: date) % 100
+        let month:Int = cal.component(NSCalendarUnit.Month, fromDate: date)
+        let year:Int = cal.component(.Year, fromDate: date) % 100
         return urlForYear(year, month: month)
     }
     
@@ -28,50 +27,47 @@ class ViewController: UIViewController {
         return NSURL(string: surl)!
     }
     
-    @IBAction func backTapped(sender: AnyObject) {
-        self.webView.goBack()
-    }
-    
     func actionTapped() {
         UIApplication.sharedApplication().openURL(url)
     }
     
-    func nextMonth() {
+    func nextMonthURL() -> NSURL {
         let date = NSDate()
         let cal = NSCalendar.currentCalendar()
-        var comps:NSURLComponents
-        var month:Int = cal.component(NSCalendarUnit.CalendarUnitMonth, fromDate: date)
-        var year:Int = cal.component(.CalendarUnitYear, fromDate: date) % 100
+        var month:Int = cal.component(NSCalendarUnit.Month, fromDate: date)
+        var year:Int = cal.component(.Year, fromDate: date) % 100
         month++
         if month >= 13 {
             month = 1
             year++
         }
         let url = urlForYear(year, month: month)
-        self.webView.loadRequest(NSURLRequest(URL: url))
+        return url
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if !loaded {
+            self.loaded = true
+            self.currentMonthTapped()
+        }
+    }
+    
+    
+    @IBAction func currentMonthTapped() {
+        let safari = SFSafariViewController(URL: self.url)
+        self.presentViewController(safari, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func nextMonthTapped() {
+        let safari = SFSafariViewController(URL: self.nextMonthURL())
+        self.presentViewController(safari, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Happy Sumo"
-        
-        self.backButton.layer.cornerRadius = 5
-        self.backButton.layer.masksToBounds = true
-        self.backButton.backgroundColor = UIColor.whiteColor()
-        
-        var bbi = UIBarButtonItem(title: "Next Month", style: .Plain, target: self, action: "nextMonth")
-        self.navigationItem.rightBarButtonItem = bbi
-        
-        bbi = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "actionTapped")
-        self.navigationItem.leftBarButtonItem = bbi
-        
-        let frame = self.view.bounds
-        webView = WKWebView(frame: frame)
-        webView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
-        self.view.addSubview(webView)
-        self.view.bringSubviewToFront(self.backButton)
-        let request = NSURLRequest(URL: url)
-        webView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {

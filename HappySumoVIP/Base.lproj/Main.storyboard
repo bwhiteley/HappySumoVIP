@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O9B-H5-nMd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O9B-H5-nMd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,30 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8z-7v-4tB">
-                                <rect key="frame" x="16" y="72" width="46" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-wa-UmV">
+                                <rect key="frame" x="179" y="170" width="243" height="259"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-lq-g2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="105"/>
+                                        <state key="normal" title="Current Month"/>
+                                        <connections>
+                                            <action selector="currentMonthTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkd-lL-uYi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-0O-iSm">
+                                        <rect key="frame" x="0.0" y="119" width="243" height="140"/>
+                                        <state key="normal" title="Next Month"/>
+                                        <connections>
+                                            <action selector="nextMonthTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vth-sJ-gn8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ZtR-sa-6ZL"/>
-                                    <constraint firstAttribute="width" constant="46" id="eVs-4k-OiJ"/>
+                                    <constraint firstAttribute="height" constant="259" id="OpP-dN-Mze"/>
+                                    <constraint firstAttribute="width" constant="243" id="ehW-8e-uf7"/>
                                 </constraints>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4i-0M-9Yv"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="G8z-7v-4tB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FR0-L9-PSU"/>
-                            <constraint firstItem="G8z-7v-4tB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PJC-QK-Dvb"/>
+                            <constraint firstItem="3cB-wa-UmV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bix-8Y-Bph"/>
+                            <constraint firstItem="3cB-wa-UmV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SV2-WB-gOH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QfE-N4-MmC"/>
-                    <connections>
-                        <outlet property="backButton" destination="G8z-7v-4tB" id="lwA-oB-aQC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
