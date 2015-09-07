@@ -16,18 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-wa-UmV">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3cB-wa-UmV">
                                 <rect key="frame" x="179" y="170" width="243" height="259"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-lq-g2j">
-                                        <rect key="frame" x="0.0" y="0.0" width="243" height="105"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-lq-g2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="130"/>
                                         <state key="normal" title="Current Month"/>
                                         <connections>
                                             <action selector="currentMonthTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkd-lL-uYi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzQ-0O-iSm">
-                                        <rect key="frame" x="0.0" y="119" width="243" height="140"/>
+                                        <rect key="frame" x="0.0" y="130" width="243" height="130"/>
                                         <state key="normal" title="Next Month"/>
                                         <connections>
                                             <action selector="nextMonthTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vth-sJ-gn8"/>
