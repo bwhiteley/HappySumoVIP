@@ -23,7 +23,11 @@ class ViewController: UIViewController {
     }
     
     private func urlForYear(year:Int, month:Int) -> NSURL {
-        let surl = "http://www.happysumosushi.com/vip/\(month)\(year)provip.php"
+        var smonth = "\(month)"
+        if smonth.characters.count == 1 {
+            smonth = "0" + smonth
+        }
+        let surl = "http://www.happysumosushi.com/vip/\(smonth)\(year)provip.php"
         return NSURL(string: surl)!
     }
     
@@ -68,6 +72,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Happy Sumo"
+        
     }
 
     override func didReceiveMemoryWarning() {
